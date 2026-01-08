@@ -63,9 +63,11 @@ cp .env.example .env.local
 
 Edit `.env.local` with your actual values:
 ```env
-# Database
+# Database - Local MongoDB
 MONGODB_URI=mongodb://localhost:27017/dropshipping-store
-# For MongoDB Atlas: mongodb+srv://username:password@cluster.mongodb.net/dropshipping-store
+
+# Database - MongoDB Atlas (replace with your actual connection string)
+# MONGODB_URI=mongodb+srv://<YOUR_USERNAME>:<YOUR_PASSWORD>@<YOUR_CLUSTER>.mongodb.net/dropshipping-store
 
 # Authentication (generate a random string)
 NEXTAUTH_URL=http://localhost:3000
